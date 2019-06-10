@@ -1,0 +1,3105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/***WAYPOINTS***/
+.header .headeraway{
+	transition: .3s;
+}
+.headerwhite{
+	background-color: rgba(0,0,0,.5);
+	transition: .3s;
+}
+/*FONT FACES*/
+	@font-face{
+		font-family: 'great-vibes';
+		src: url('../fonts/great-vibes.otf');
+	}
+	@font-face{
+		font-family: 'marker';
+		src: url('../fonts/marker.ttf');
+	}
+/*DISPLAY NONE*/
+	#product-coozie-popup,
+	#product-popup-shirt-white,
+	#product-popup-tanktop-purple,
+	#product-popup-wristband-black,
+	#product-popup-wristband-green,
+	#product-popup-wristband-purple,
+	#product-popup-wristband-red,
+	#product-poster-popup,
+	#product-shirt-popup,
+	#product-shirt-black-white,
+	#product-tanktop-purple,
+	#product-wristband-black,
+	#product-wristband-green,
+	#product-wristband-purple,
+	#product-wristband-red,
+	#hoodie-sizing-box,
+	#product-hoodie-popup,
+	#product-tanktop-popup,
+	#product-wristband-popup,
+	.mobile-menu,
+	.mobile-dropdown,
+	.store-container-row-two,
+	.store-view-less,
+	#tanktop-sizing-box,
+	#tshirt-sizing-box{
+		display: none;
+	}
+/***HEADER***/
+	.header{
+		overflow: hidden;
+		position: fixed;
+		transition: .3s;
+		width: 100%;
+		z-index: 1000;
+	}
+	.headercontainer{
+		align-items: flex-start;
+		display: flex;
+		justify-content: space-between;
+		margin: 5px auto;
+		max-width: 1200px;
+	}
+	.headerright{
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.headerright i{
+		font-size: 20px;
+		transition: .2s;
+	}
+	.headera{
+		position: relative;
+		display: block;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		padding: 5px 0;
+		text-decoration: none;
+		text-shadow: 2px 2px 2px #000;
+		transition: .2s;
+	}
+	.headera:hover,
+	.headerright i:hover{
+		color: #00a8be;
+		transition: .2s;
+	}
+	.headera:before{
+		border-bottom: 2px solid #fff;
+		content: '';
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		transform: scaleY(1.8);
+		transition: .3s;
+		width: 100%;
+	}
+	.headera:hover:before{
+		opacity: 1;
+		transform: scaleY(1);
+	}
+	.headerright img{
+		max-width: 35px;
+	}
+/***MAIN BANNER***/
+	.jarallax{
+		margin: 0 auto;
+		max-width: 1500px;
+		min-height: 666px;
+	}
+/***UPCOMING EVENTS***/
+	.upcoming{
+		background-color: #000;
+		margin: 0 auto;
+		max-width: 1500px;
+		position: relative;
+	}
+	.upcomingcontainer{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1100px;
+	}
+	.upcomingshows,
+	.upcomingposter{
+		color: #fff;
+		padding: 40px 0;
+	}
+	.upcomingshows{
+		width: 62%;
+	}
+	h2{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 40px;
+		text-align: center;
+	}
+	.upcomingshowsheader{
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+	.upcomingshowsheader img{
+		height: 90px;
+		width: auto;
+	}
+	.upcomingposter{
+		width: 30%;
+	}
+	.upcomingposter img{
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+/***MAINSTREAM MEDIA***/
+	.mainstream{
+		background-color: #00a8be;
+		margin: 0 auto;
+		max-width: 1500px;
+		padding: 20px 0;
+		position: relative;
+	}
+	.mainstream-nav p:hover{
+		cursor: pointer;
+	}
+	.mainstreamwrapper{
+		box-shadow: 10px 10px 5px #000;
+		width: 98%;
+	}
+	.mainstreamcontainer{
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 20px 0;
+		width: 980px;
+		z-index: 100;
+	}
+	.mainstreambox{
+		width: 100%;
+		z-index: 10;
+	}
+	.mainstreambox .jarallax{
+		border: 8px solid #fff;
+		min-height: 450px;
+	}
+	.mainstream h2,
+	.contact h2{
+		color: #fff;
+		padding: 20px;
+		position: relative;
+		text-shadow: 1px 1px 1px #000;
+		z-index: 10;
+	}
+	.mainstream h2{
+		padding-bottom: 40px;
+	}
+	.mainstreamdancers{
+		position: absolute;
+		top: 1%;
+		width: 100%;
+		z-index: 0;
+	}
+	.mainstreamdancers img{
+		height: 100px;
+		width: auto;
+	}
+	.click-for-full-video{
+		background-color: rgba(255,255,255,.3);
+		bottom: 20px;
+		border: 2px solid #00a8be;
+		box-shadow: 1px 1px 20px 5px #000;
+		color: #000;
+		font-family: 'Montserrat', sans-serif;
+		left: 20px;
+		position: absolute;
+		z-index: 10;
+	}
+	.click-for-full-video p{
+		padding: 5px;
+	}
+	/*MAINSTREAM NAV*/
+	.mainstream-nav-box{
+		background-color: #fff;
+		margin: -5px auto 0 auto;
+		max-width: 1100px;
+		width: 100%;
+	}
+	.mainstream-nav{
+		margin: 0 auto;
+		padding-bottom: 5px;
+		max-width: 105%;
+		z-index: 10;
+		width: 90%;
+	}
+	.slick-initialized .slick-track {
+	    display: flex;
+	    align-items: center;
+	}
+	.mainstream-nav img{
+		max-width: 130px;
+		height: auto;
+	}
+	.mainstream-nav img:hover{
+		cursor: pointer;
+	}
+	.mainstream-nav-arrows{
+		margin: 0 auto;
+		max-width: 100%;
+		position: absolute;
+		top: 640px;
+		width: 100%;
+	}
+	.mainstream-nav-arrows-container{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 95%;
+		
+	}
+	.logo-background{
+		position: absolute;
+		max-width: 100%;
+		top: 0;
+	}
+	.logo-background img{
+		height: 100px;
+		width: auto;
+	}
+	/*SLIDER EDITS*/
+	.mainstreambox .slick-prev,
+	.mainstreambox .slick-next,
+	.mainstream-nav .slick-prev,
+	.mainstream-nav .slick-next{
+		display: none !important;
+	}
+	#mainstream-left-arrow,
+	#mainstream-right-arrow,
+	#mainstream-nav-left-arrow,
+	#mainstream-nav-right-arrow{
+		height: 30px;
+		width: auto;
+	}
+	#mainstream-left-arrow:hover,
+	#mainstream-right-arrow:hover,
+	#mainstream-nav-left-arrow:hover,
+	#mainstream-nav-right-arrow:hover{
+		cursor: pointer;
+	}
+/***BANDS IN TOWN WIDGET***/
+	.bit-logo-desktop g,
+	.upcoming .bit-widget.bit-layout-ipad .bit-event-list-title,
+	.upcoming .bit-widget .bit-nav-bar-container .bit-nav-bar,
+	.upcoming .bit-widget .bit-top-track-button{
+		display: none;
+	}
+	.bit-widget-container{
+		padding-top: 10px;
+	}
+	.upcoming .bit-widget .bit-top-track-button{
+		color: #00a8be;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		padding: 15px 0 5px 0;
+		text-align: center;
+		text-decoration: underline;
+	}
+	.bit-event,
+	.bit-show-upcoming,
+	.bit-upcoming-events-show-all-button{
+		font-family: 'Montserrat', sans-serif;
+	}
+	.upcoming .bit-event{
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.upcoming .bit-event{
+		align-items: center;
+	}
+	.bit-upcoming-events-show-all-button{
+		margin: 0 20px;
+	}
+	.upcoming .bit-widget{
+		max-height: 400px;
+		overflow-y: auto;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-event-buttons{
+		flex-direction: row-reverse;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-offers-container,
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-rsvp-container{
+		margin: 0;
+	}
+/***PHOTO COLLAGE***/
+	.photocollage{
+		background-color: #000;
+		margin: 0 auto;
+		max-width: 1500px;
+	}
+	.photocollagecontainer{
+		display: flex;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.photocolumnblock{
+		overflow: hidden;
+	}
+	#photocolumn-1,
+	#photocolumn-2,
+	#photocolumn-3,
+	#photocolumn-4,
+	#photocolumn-5{
+		display: block;
+		max-width: 20%;
+		width: 100%;
+	}
+	.photocollage img{
+		display: block;
+	    max-width: 100%;
+	    height: 170px;
+	    width: 300px;
+	    object-fit: cover;
+    }
+        /*FANCYBOX EDITS*/
+        .fancybox-show-infobar .fancybox-infobar{
+        	font-family: 'Montserrat', sans-serif;
+        } 
+/***WEDDING***/
+	.wedding{
+		background-color: #E7E9E7;
+		margin: 0 auto;
+		max-width: 1500px;
+	}
+	.weddingcontainer{
+		align-items: center;
+		display: flex;
+		margin: 0 auto;
+		max-width: 1100px;
+		padding: 20px 0;
+	}
+	.wedding-cake{
+		max-width: 30%;
+	}
+	.wedding-cake img{
+		min-width: 330px;
+		width: 330px;
+	}
+	.wedding-copy{
+		color: #fff;
+		max-width: 70%;
+		text-align: center;
+	}
+	.wedding-copy-container{
+		margin: 0 auto;
+		max-width: 90%;
+	}
+	#wedding-heading{
+		color: #00a8be;
+		font-family: 'great-vibes', serif;
+		font-size: 80px;
+	}
+	#wedding-copy-body{
+		color: #000;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	#wedding-copy-body a{
+		color: #000;
+	}
+/***BOOKING***/
+	.booking{
+		background-color: #000;
+		color: #fff;
+		margin: 0 auto;
+		max-width: 1500px;
+		padding: 20px 0;
+		position: relative;
+	}
+	.booking-container{
+		margin: 0 auto;
+		max-width: 90%;
+		padding: 20px 0;
+		text-align: center;
+		z-index: 10;
+	}
+	.booking-container h2{
+		color: #fff;
+	    padding: 20px;
+	    position: relative;
+	    text-shadow: 1px 1px 1px #000;
+	    z-index: 10;
+	}
+	.booking-container p{
+		color: #fff;
+		font-family: 'Montserrat';
+		padding-top: 20px;
+	}
+	.booking-container a{
+		color: #fff;
+	}
+	.booking-dancers{
+		padding-top: 20px;
+		position: absolute;
+		text-align: center;
+		top: 1%;
+		width: 100%;
+		z-index: 0;
+	}
+	.booking-dancers img{
+		height: 100px;
+		width: auto;
+	}
+/***ANCHOR TAGS***/
+	#upcoming-events{
+		margin-top: -40px;
+		padding-top: 40px;
+	}
+	#store{
+		bottom: 45px;
+		position: absolute;
+	}
+	#media{
+		margin-top: -40px;
+		padding-top: 40px;
+	}
+	#wedding{
+		margin-top: -45px;
+		padding-top: 45px;
+	}
+/***STORE***/
+	.store{
+		position: relative;
+		background-image: url('../media/the-boy-band-night-logo70.png');
+		background-position: center;
+		background-repeat: repeat;
+		background-size: 150px;
+		margin: 0 auto;
+		max-width: 1500px;
+	}
+	.storecontainer{
+		margin: 0 auto;
+		max-width: 1100px;
+		position: relative;
+	}
+	.store h2{
+		color: #000;
+	    padding: 55px 0 10px 0;
+	    position: relative;
+	    text-shadow: 3px 3px 0 #fff;
+	    z-index: 10;
+	}
+	.store-dancers{
+		padding-top: 20px;
+		position: absolute;
+		text-align: center;
+		top: 1%;
+		width: 100%;
+		z-index: 0;
+	}
+	.store-dancers img{
+		height: 100px;
+		width: auto;
+	}
+	.store-container-row-one-container,
+	.store-container-row-two-container{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+	.store-container-row-one-container{
+		padding-top: 20px;
+	}
+	/*COLOR SELECTIONS*/
+	.color-select{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		left: 15px;
+		top: 0;
+		margin: 0 auto;
+		position: absolute;
+		width: 10%;
+	}
+	/*COLORS*/
+	#black{
+		background-color: #E97AAC;
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 2px 2px 5px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	#blackband{
+		background-color: #000;
+		border: 1px solid #fff;
+		border-radius: 45px;
+		box-shadow: 2px 2px 5px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	#blue{
+		background-color: #00a8be;
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 2px 2px 10px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	#greenband{
+		background-color: #02E736;
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 2px 2px 5px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	#mainband{
+		background-color: none;
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 2px 2px 5px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	#purpleband{
+		background-color: #B947D7;
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 2px 2px 5px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	#purple{
+		background-color: purple;
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 2px 2px 5px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	#redband{
+		background-color: #FA2F87;
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 2px 2px 5px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	#white{
+		background-color: #fff;
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 2px 2px 5px #000;
+		height: 15px;
+		margin: 2px 0;
+		width: 15px;
+	}
+	/*TANKTOP*/
+	#tanktop-colors-purple-options{
+		margin-left: 5px;
+	}
+	.store-view-more,
+	.store-view-less{
+		background-color: rgba(0,168,190,.5);
+		border: 1px solid #000;
+		font-family: 'Montserrat';
+		font-size: 14px;
+		margin: 0 auto;
+		max-width: 1500px;
+		position: relative;
+		text-align: center;
+		width: calc(100% - 2px);
+	}
+	.store-view-more:hover,
+	.store-view-less:hover{
+		cursor: pointer;
+	}
+	.store-view-more p,
+	.store-view-more i,
+	.store-view-less p,
+	.store-view-less i{
+		color: #000;
+		text-shadow: 2px 2px 10px #fff;
+	}
+	.product{
+		border: 3px solid #000;
+		box-shadow: 10px 10px 5px #000;
+		margin: 20px 0;
+	}
+	.product:hover{
+		cursor: pointer;
+	}
+	.storecontainer a{
+		text-decoration: none;
+	}
+	.store-item-info{
+		background-color: #fff;
+		font-size: 22px;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.product-image{
+		margin: 0 auto;
+		text-align: center;
+		max-height: 240px;
+		max-width: 300px;
+		min-width: 300px;
+		position: relative;
+	}
+	.product-image img{
+		border: 10px solid #fff;
+		object-fit: cover;
+		width: calc(100% - 20px);
+	}
+	.product-title{
+		color: #000;
+		font-family: 'marker', sans-serif;
+		padding: 3px 0;
+		text-align: center;
+		text-shadow: 1px 1px #000;
+	}
+	.product-price{
+		color: #000;
+		font-family: 'marker', sans-serif;
+		padding: 3px 0;
+		text-align: center;
+		text-shadow: 1px 1px #000;
+	}
+	.product-popup{
+		margin-top: 300px;
+		position: fixed;
+		top: 0;
+		transform: translateY(-50%);
+		width: 100%;
+		z-index: 500;
+	}
+	.product-popup-container{
+		background-color: rgba(0,0,0,.9);
+		border: 1px solid #fff;
+		display: flex;
+		height: 400px;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 90%;
+		padding: 30px 0;
+	}
+	.product-popup-container-item img{
+		height: 400px;
+		width: auto;
+	}
+	.product-popup-container-item,
+	.product-popup-container-text{
+		position: relative;
+		text-align: center;
+		width: 50%;
+	}
+	.product-popup-container-text p{
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 30px;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.paypal-form{
+		max-height: 362px;
+	}
+	.paypal-form table{
+		width: 100%;
+	}
+	.paypal-form select{
+		border: 2px solid #fff;
+		font-family: 'Montserrat', sans-serif;
+	    font-size: 18px;
+	    color: #fff;
+	    background-color: #000;
+	    width: 200px;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+	.paypal-button-placement{
+		padding-top: 20px;
+	}
+	.form-x-shirt,
+	.form-x-coozie,
+	.form-x-hoodie,
+	.form-x-poster,
+	.form-x-tanktop,
+	.form-x-wristband{
+		position: absolute;
+		right: 20px;
+		top: 0;
+	}
+	.form-x-shirt i,
+	.form-x-coozie i,
+	.form-x-hoodie i,
+	.form-x-poster i,
+	.form-x-tanktop i,
+	.form-x-wristband i{
+		color: #fff;
+		font-size: 24px;
+	}
+	.form-x-shirt i:hover,
+	.form-x-coozie i:hover,
+	.form-x-hoodie i:hover,
+	.form-x-poster i:hover,
+	.form-x-tanktop i:hover,
+	.form-x-wristband i:hover{
+		cursor: pointer;
+	}
+	/*PAYPAL FORM*/
+	.paypal-form{
+		margin: 5px auto 0 auto;
+		width: 80%;
+	}
+	.paypal-options{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 70px;
+		justify-content: space-between;
+	}
+	.paypal-options p{
+		padding-bottom: 5px;
+	}
+	.category-price p{
+		padding-bottom: 15px;
+	}
+	/*PRODUCT TITLE*/
+	.product-title-line{
+		border-bottom: 3px solid #fff;
+		margin: 0 auto;
+		padding-bottom: 5px;
+		width: 80%;
+	}
+	.product-title-line-container{
+		align-items: center;
+		display: flex;
+		margin: 0 auto;
+		width: 90%;
+	}
+	#tbbn-product-title-logo{
+		height: 50px;
+	}
+	.hoodie-colors,
+	.hoodie-color-options,
+	.hoodie-sizes,
+	.hoodie-size-options,
+	.tanktop-colors,
+	.tanktop-color-options,
+	.tanktop-sizes,
+	.tanktop-size-options,
+	.tshirt-colors,
+	.tshirt-color-options,
+	.tshirt-size-options,
+	.tshirt-sizes,
+	.wristband-colors,
+	.wristband-color-options{
+		display: flex;
+		width: 100%;
+	}
+	.coozie-checkout,
+	.hoodie-checkout,
+	.poster-checkout,
+	.tanktop-checkout,
+	.tshirt-checkout,
+	.wristband-checkout{
+		border: 1px solid #fff;
+		margin: 30px 0 50px 0;
+		width: calc(100% - 2px)
+	}
+	.hoodie-colors,
+	.hoodie-sizes,
+	.tanktop-colors,
+	.tanktop-sizes,
+	.tshirt-colors,
+	.tshirt-sizes,
+	.wristband-colors{
+		flex-direction: column;
+		padding-bottom: 10px;
+	}
+	.hoodie-colors input[type="radio"],
+	.hoodie-sizes input[type="radio"],
+	.tanktop-colors input[type="radio"],
+	.tanktop-sizes input[type="radio"],
+	.tshirt-colors input[type="radio"],
+	.tshirt-sizes input[type="radio"],
+	.paypal-button-placement input[type="submit"],
+	.wristband-colors input[type="radio"]{
+		display: none;
+	}
+	.hoodie-colors input[type="radio"]:checked + label,
+	.hoodie-sizes input[type="radio"]:checked + label,
+	.tanktop-colors input[type="radio"]:checked + label,
+	.tanktop-sizes input[type="radio"]:checked + label,
+	.tshirt-colors input[type="radio"]:checked + label,
+	.tshirt-sizes input[type="radio"]:checked + label,
+	.wristband-colors input[type="radio"]:checked + label{
+		background-color: #00a8be;
+	}
+	.option-boxes{
+		background-color: #000;
+		border: 1px solid #fff;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		width: 120px;
+		max-width: 120px;
+	}
+	.option-boxes:hover{
+		cursor: pointer;
+	}
+	.option-boxes-clicked{
+		background-color: #00a8be;
+	}
+	.paypal-button-placement{
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		margin: 0 auto;
+		padding: 5px 0;
+		width: 100%;
+	}
+	.hoodie-colors label,
+	.hoodie-sizes label,
+	.tanktop-colors label,
+	.tanktop-sizes label,
+	.tshirt-colors label,
+	.tshirt-sizes label,
+	.wristband-colors label{
+		cursor: pointer;
+		display: block;
+		padding: 5px 0;
+		width: 120px;
+	}
+	.coozie-checkout label,
+	.hoodie-checkout label,
+	.poster-checkout label,
+	.tanktop-checkout label,
+	.tshirt-checkout label,
+	.wristband-checkout label{
+		cursor: pointer;
+		display: block;
+		padding: 5px 0;
+		width: 100%;
+	}
+	.option-margin{
+		margin-left: 5px;
+	}
+	.option-boxes label:hover{
+		cursor: pointer;
+	}
+	.category-price{
+		width: 100%;
+	}
+	.category-price p{
+		border: none;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 24px;
+		text-align: left;
+		width: 100%;
+	}
+	.category-title p{
+		border: none;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		text-align: left;
+		width: 100%;
+	}
+	#wristband-color-green,
+	#wristband-color-red{
+		margin-top: 5px;
+	}
+	/*SIZING CHART*/
+
+		/*SIZING CHART*/
+		#hoodie-size-chart,
+		#tanktop-size-chart,
+		#tshirt-size-chart{
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+			margin: 0 auto;
+			width: 80%;
+		}
+		#hoodie-size-chart span,
+		#tanktop-size-chart span,
+		#tshirt-size-chart span{
+			border-bottom: 1px solid #fff;
+			font-size: 12px;
+		}
+		#hoodie-size-chart span:hover,
+		#tanktop-size-chart span:hover,
+		#tshirt-size-chart span:hover{
+			cursor: pointer;
+		}
+		.sizing-box{
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+			left: 0;
+			position: absolute;
+			bottom: 0;
+			text-align: left;
+			width: 100%;
+		}
+		.sizing-box-container{
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			width: 80%;
+		}
+		table{
+			background-color: #000;
+			border: 1px solid #fff;
+			border-spacing: 5px;
+    		border-collapse: separate;
+		}
+		.sizing-titles th{
+			border-bottom: 1px solid #fff;
+		}
+		#hoodie-sizing-title-x,
+		#tanktop-sizing-title-x,
+		#tshirt-sizing-title-x{
+			border: none;
+		}
+		#hoodie-sizing-title-x:hover,
+		#tanktop-sizing-title-x:hover,
+		#tshirt-sizing-title-x:hover{
+			cursor: pointer;
+		}
+/***MOBILE HAMBURGER***/
+	.mobile-menu{
+		height: 50px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+	.mobile-menu-container{
+		display: flex;
+		height: 50px;
+		justify-content: center;
+	}
+	.mobile-hamburger{
+		border-radius: 50%;
+		display: flex;
+	    justify-content: center;
+	}
+	.mobile-hamburger span{
+		color: red;
+		background-color: #00a8be;
+		position: absolute;
+	    width: 30px;
+	    height: 3px;
+	    z-index: 200;
+	}
+	.burger1{
+	    top: 10px;
+	    transition: .3s;
+	}
+	.burger2{
+	    top:17px;
+	    transition: .3s; 
+	}
+	.burger3{
+	    top: 24px;
+	    transition: .3s; 
+	}
+	.mobile-circle:hover,
+	.mobile-hamburger span:hover{
+		cursor: pointer;
+	}
+	.mobile-circle{
+		background-color: rgba(0,0,0,.5);
+		border-bottom-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+ 		height: 50px;
+ 		position: absolute;
+ 		top: 0;
+ 		width: 100px;
+ 		z-index: 100;
+	}
+	/*MOBILE DROPDOWN*/
+	.mobile-dropdown{
+		background-image: url('../media/the-boy-band-night-logo71.png');
+		background-position: center;
+		background-repeat: repeat;
+		background-size: 150px;
+		background-color: #000;
+		display: fixed;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.mobile-dropdown-container{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 30px;
+		height: 100%;
+		justify-content: center;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.mobile-dropdown-container a{
+		color: #fff;
+		padding-bottom: 70px;
+		text-decoration: none;
+	}
+	.mobile-dropdown-container img{
+		padding-bottom: 70px;
+		width: 500px;
+	}
+
+/*****MEDIA QUERIES*****/
+@media(max-width:1225px){
+	.storecontainer{
+		max-width: 1000px;
+	}
+	#product-tanktop-popup .product-title-line p{
+		font-size: 24px;
+	}
+	}
+@media(max-width:1140px){
+	.upcomingcontainer{
+		width: 90%;
+	}
+	.upcomingshowsheader h2{
+		font-size: 32px;
+	}
+	.upcomingposter{
+		align-items: center;
+    	display: flex;
+	}
+	}
+@media(max-width:1130px){
+	.product-popup-container-item{
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+	.product-popup-container-item img{
+		height: 300px;
+		width: auto;
+	}
+}
+@media(max-width:1110px){
+	.storecontainer{
+		max-width: 900px;
+	}
+	.weddingcontainer{
+		max-width: 1000px;
+	}
+	}
+@media(max-width:1065px){
+	.upcomingposter{
+		display: none;
+	}
+	.upcomingcontainer{
+		width: 90%;
+	}
+	.upcomingshowsheader h2{
+		font-size: 32px;
+	}
+	.upcomingcontainer{
+		flex-direction: column;
+	}
+	.upcomingshows{
+		margin: 0 auto;
+		width: 95%;
+	}
+	.upcomingshowsheader{
+		flex-direction: column;
+	}
+	.upcomingshowsheader h2{
+		font-size: 40px;
+	}
+	.upcomingshowsheader img{
+		height: 200px;
+		padding-bottom: 20px;
+	}
+	.upcoming .bit-widget{
+		max-height: 2000px;
+	}
+	.product-popup{
+		z-index: 9999;
+	}
+	.product-popup-container{
+		height: 520px;
+	}
+	.tanktop-color-options,
+	.tanktop-size-options,
+	.tshirt-color-options,
+	.tshirt-size-options{
+		flex-direction: column;
+	}
+	.category-price p,
+	.category-title p,{
+		text-align: left;
+	}
+	#tanktop-sizes-large{
+		margin: 0;
+	}
+	#tanktop-colors-purple-options,
+	#tshirt-colors-purple-options{
+		margin: 5px 0 0 0;
+	}
+	#tanktop-sizes-medium,
+	#tshirt-sizes-medium{
+		margin: 5px 0;
+	}
+	#wristband-color-purple{
+		margin-left: 5px;
+	}
+	.category-title,
+	.option-boxes{
+		max-width: 100%;
+		width: 100%;
+	}
+	.option-middle{
+		margin: 0;
+	}
+	#tshirt-sizes-large.option-margin{
+		margin: 0;
+	}
+	.hoodie-colors label,
+	.hoodie-sizes label, 
+	.tanktop-colors label, 
+	.tanktop-sizes label, 
+	.tshirt-colors label, 
+	.tshirt-sizes label{
+		width: 100%;
+	}
+	}	
+@media(max-width:1010px){
+	.storecontainer{
+		max-width: 800px;
+	}
+	.weddingcontainer{
+		max-width: 900px;
+	}
+	.wedding-cake img{
+		min-width: 300px;
+		width: 300px;
+	}
+	}
+@media(max-width:1000px){
+	.mainstreamcontainer{
+		max-width: 900px;
+	}
+	.photocollage{
+		overflow: hidden;
+	}
+	.photocolumnblock #photocolumn-5{
+		max-width: 0%;
+		width: 0%;
+	}
+	#photocolumn-1,
+	#photocolumn-2,
+	#photocolumn-3,
+	#photocolumn-4{
+		max-width: 25%;
+	}
+	}
+@media(max-width:980px){
+	.headera,
+	.headerright i{
+		font-size: 14px;
+	}
+	.headerright img{
+		max-width: 25px;
+	}
+	}
+@media(max-width:950px){
+	.store-container-row-one-container,
+	.store-container-row-two-container{
+		align-items: center;
+		flex-direction: column;
+	}
+	.product{
+		max-width: 300px;
+	}
+	}
+@media(max-width:925px){
+	.mainstreamcontainer{
+		max-width: 800px;
+	}
+	.product-popup{
+		margin-top: 330px;
+	}
+	.product-popup-container-item img{
+		height: 250px;
+	}
+	.wristband-row-one,
+	.wristband-row-two{
+		width: calc(50% - 5px);
+	}
+	#product-wristband-popup .product-title-line p{
+		font-size: 24px;
+	}
+	.hoodie-colors label,
+	.hoodie-sizes label, 
+	.tanktop-colors label, 
+	.tanktop-sizes label, 
+	.tshirt-colors label, 
+	.tshirt-sizes label, 
+	.wristband-colors label{
+		width: 100%;
+	}
+	.form-x-shirt, 
+	.form-x-coozie, 
+	.form-x-hoodie, 
+	.form-x-poster, 
+	.form-x-tanktop, 
+	.form-x-wristband {
+    	position: absolute;
+    	right: 20px;
+    	top: -15px;
+	}
+@media(max-width:910px){
+	.storecontainer{
+		max-width: 800px;
+	}
+	.weddingcontainer{
+		flex-direction: column-reverse;
+	}
+	.wedding-cake{
+		max-width: 100%;
+		padding: 20px;
+	}
+	.wedding-cake img{
+		width: 450px;
+	}
+	.wedding-copy{
+		max-width: 100%;
+	}
+	}
+@media(max-width:900px){
+	.option-boxes label,
+	.hoodie-checkout label,
+	.tanktop-checkout label,
+	.tshirt-checkout label{
+		font-size: 16px;
+	}
+}
+@media(max-width:825px){
+	.mainstreamcontainer{
+		max-width: 700px;
+	}
+}
+@media(max-width:815px){
+	#product-wristband-popup .product-title-line p{
+		font-size: 18px;
+	}
+}
+@media(max-width:800px){
+	.header{
+		display: none;
+	}
+	.mobile-menu{
+		display: block;
+	}
+	.mainstreambox .jarallax{
+		min-height: 400px;
+	}
+	.mainstream-nav img{
+		max-width: 150px;
+	}
+	.mainstream-nav-arrows{
+		top: 600px;
+	}
+	.storecontainer{
+		max-width: 600px;
+	}
+}
+@media(max-width:750px){
+	.photocolumnblock #photocolumn-4,
+	.photocolumnblock #photocolumn-5{
+		max-width: 0%;
+		width: 0%;
+	}
+	#photocolumn-1,
+	#photocolumn-2,
+	#photocolumn-3{
+		max-width: 33.4%;
+	}
+}
+@media(max-width:725px){
+	.mainstreamcontainer{
+		max-width: 600px;
+	}
+	.product-popup{
+		margin-top: 330px;
+	}
+	.product-popup-container{
+		flex-direction: column;
+		height: 585px;
+		justify-content: flex-start;
+	}
+	.product-popup-container-item, 
+	.product-popup-container-text{
+		width: 100%;
+	}
+	.product-popup-container-text{
+		margin-top: 10px;
+	}
+	.tanktop-color-options,
+	.tanktop-size-options,
+	.tshirt-color-options,
+	.tshirt-size-options{
+		flex-direction: row;
+	}
+	#tanktop-colors-black-options,
+	#tshirt-colors-black-options{
+		margin: 0 2.5px 0 0;
+	}
+	#tanktop-colors-purple-options,
+	#tshirt-colors-purple-options{
+		margin: 0 0 0 2.5px;
+	}
+	#tanktop-sizes-medium,
+	#tshirt-sizes-medium{
+		margin: 0 5px;
+	}
+	#product-wristband-popup .product-title-line p{
+		font-size: 28px;
+		width: 100%;
+	}
+	.tshirt-checkout{
+		margin: 20px 0;
+	}
+	.form-x-shirt, 
+	.form-x-coozie, 
+	.form-x-hoodie, 
+	.form-x-poster, 
+	.form-x-tanktop, 
+	.form-x-wristband {
+	    position: absolute;
+	    
+    	top: -275px;
+	}
+}
+@media(max-width:710px){
+	.storecontainer h2{
+		font-size: 30px;
+	}
+}
+@media(max-width:700px){
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-event-buttons{
+		flex-direction: column-reverse;
+	}
+	.mainstream-nav{
+		width: 90%;
+	}
+	.mainstream-nav img{
+		max-width: 130px;
+	}
+	.mainstream-nav-arrows{
+		top: 590px;
+	}
+	.storecontainer{
+		max-width: 500px;
+	}
+	.store-container-row-one-container{
+		padding-top: 30px;
+	}
+	.product-image{
+		max-width: 350px;
+	}
+	.product-popup{
+		margin-top: 333px;
+	}
+	.product-popup-container{
+		height: 595px;
+	}
+	.tshirt-checkout{
+		margin: 10px 0;
+	}
+	.wedding-cake img{
+		width: 350px;
+	}
+	.product-popup-container-text{
+		margin-top: 10px;
+	}
+	.product-title-line-container{
+		flex-direction: column;
+	}
+}
+@media(max-width:650px){
+	.option-boxes{
+		max-width: 100%;
+	}
+}
+@media(max-width:625px){
+	.mainstreamcontainer{
+		max-width: 500px;
+	}
+	.mainstream-nav img{
+		max-width: 110px;
+	}
+}
+@media(max-width:600px){
+	.product-title-line p{
+		font-size: 32px;
+	}
+	.photocolumnblock #photocolumn-3,
+	.photocolumnblock #photocolumn-4,
+	.photocolumnblock #photocolumn-5{
+		max-width: 0%;
+		width: 0%;
+	}
+	#photocolumn-1,
+	#photocolumn-2{
+		max-width: 50%;
+	}
+}
+@media(max-width:590px){
+	.storecontainer{
+		max-width: 400px;
+	}
+}
+@media(max-width:575px){
+	.upcomingshowsheader img{
+		height: 150px;
+	}
+	.bit-widget.bit-layout-ipad .bit-event{
+		font-size: 14px;
+	}
+	.mainstreamcontainer h2{
+		font-size: 36px;
+	}
+	.mainstream-nav{
+		width: 85%;
+	}
+	.mainstream-nav-arrows{
+		top: 576px;
+	}
+}
+@media(max-width:550px){
+	.mobile-dropdown-container img{
+		width: 400px;
+	}
+	#product-tanktop-popup .product-title-line p{
+	}
+}
+@media(max-width:525px){
+	.mainstreamcontainer{
+		max-width: 450px;
+	}
+}
+}
+/*IPHONE PORTRAIT*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 736px) and (orientation: portrait){
+	/*ALL*/
+	.header{
+		display: none;
+	}
+	.mobile-menu{
+		display: block;
+	}
+	.upcomingshowsheader h2{
+		font-size: 70px;
+		padding: 30px 0;
+	}
+	/*HEADER*/
+	.mobile-dropdown-container img{
+		width: 900px;
+	}
+	.mobile-dropdown-container a{
+		font-size: 70px;
+	}
+	/*UPCOMING EVENTS*/
+	.upcomingshowsheader img{
+		height: 300px;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event{
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-event-buttons{
+		flex-direction: column;
+		margin: 30px 0 50px 0 !important;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-button{
+		padding: 40px 0;
+		width: 700px;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-details{
+		align-items: center;
+		font-size: 60px;
+		line-height: 1.2;
+		margin: 0;
+	}
+	.upcoming .bit-widget .bit-upcoming-events-show-all-button, 
+	.bit-widget .bit-past-events-show-all-button{
+		font-size: 60px;
+		margin: 0 auto;
+		padding: 40px 0;
+	    width: 700px;
+		}
+	/*STORE*/
+	.storecontainer{
+		max-width: 100%;
+		padding-top: 50px;
+	}
+	.store-container-row-one-container, 
+	.store-container-row-two-container{
+		flex-direction: column;
+	}
+	.store-container-row-one-container{
+		padding-top: 20px;
+	}
+	.store h2{
+		font-size: 60px;
+    	padding-top: 50px;
+	}
+	.store-dancers{
+		top: 0;
+	}
+	.store-dancers img{
+		height: 200px;
+	}
+	.product{
+		margin: 30px auto;
+		max-width: 80%;
+		width: 100%;
+	}
+	.product-image{
+		max-height: none;
+		max-width: none;
+		min-height: none;
+	}
+	.store-item-info{
+		font-size: 50px;
+		margin-top: -10px;
+		width: 100%;
+	}
+	.store-view-more p, 
+	.store-view-more i, 
+	.store-view-less p, 
+	.store-view-less i{
+		font-size: 40px;
+	}
+	/*POPUPS*/
+	.product-popup{
+		margin-top: 0;
+		transform: translateY(5%);
+		z-index: 9999;
+	}
+	.product-popup-container{
+		border-width: 5px;
+		flex-direction: column;
+		height: 1450px;
+		justify-content: flex-start;
+		padding-top: 0;
+	}
+	.product-popup-container-item, 
+	.product-popup-container-text{
+		width: 100%;
+	}
+	.product-popup-container-item{
+		display: block;
+		height: auto;
+	}
+	.product-popup-container-text{
+		height: 100%;
+		margin-top: 50px;
+	}
+	.product-popup-container img{
+		height: 700px;
+	}
+	.product-title-line-container{
+		flex-direction: row;
+		width: 100%;
+	}
+	.product-title-line p{
+		font-size: 60px;
+	}
+	#tbbn-product-title-logo p{
+		font-size: 60px;
+	}
+	#product-tanktop-popup .product-title-line p{
+		font-size: 55px;
+	}
+	.hoodie-sizes p{
+		padding-bottom: 50px;
+	}
+	#tbbn-product-title-logo{
+		height: 75px;
+	}
+	.hoodie-color-options,
+	.hoodie-size-options,
+	.tanktop-color-options,
+	.tanktop-size-options,
+	.tshirt-color-options,
+	.tshirt-size-options{
+		flex-direction: row;
+	}
+	.hoodie-colors,
+	.hoodie-sizes,
+	.tanktop-colors,
+	.tanktop-sizes,
+	.tshirt-colors,
+	.tshirt-sizes{
+		padding-bottom: 150px;
+	}
+	.option-boxes{
+		height: 75px;
+	}
+	.option-boxes,
+	.paypal-button-placement{
+		font-size: 50px;
+		max-width: 100%;
+	}
+	.hoodie-color-options .option-middle,
+	.tanktop-color-options .option-middle,
+	.tshirt-color-options .option-middle{
+		margin: 0 0 0 5px;
+	}
+	.hoodie-size-options .option-middle,
+	.tanktop-size-options .option-middle,
+	.tshirt-size-options .option-middle{
+		margin: 0 5px;
+	}
+	#tanktop-colors-black-options,
+	#tshirt-colors-black-options{
+		margin: 0 2.5px 0 0;
+	}
+	#tanktop-colors-purple-options,
+	#tshirt-colors-purple-options{
+		margin: 0 0 0 2.5px;
+	}
+	#tanktop-sizes-medium,
+	#tshirt-sizes-medium{
+		margin: 0 5px;
+	}
+	.wristband-row-one,
+	.wristband-row-two{
+		width: 50%;
+	}
+	#product-wristband-popup label{
+		width: 100%;
+	}
+	.wristband-checkout{
+		margin-top: 300px;
+	}
+	.wristband-checkout .paypal-button-placement{
+		max-width: calc(100% + 20px);
+    	width: 100%;
+	}
+	#hoodie-size-chart span,
+	#tanktop-size-chart span,
+	#tshirt-size-chart span{
+		font-size: 22px;
+	}
+	.category-price p{
+		font-size: 50px;
+	}
+	.category-title p{
+		font-size: 45px;
+	}
+	.form-x-shirt, 
+	.form-x-coozie, 
+	.form-x-hoodie, 
+	.form-x-poster, 
+	.form-x-tanktop,
+	.form-x-wristband{
+		top: -735px;
+	}
+	.form-x-shirt i,
+	.form-x-coozie i,
+	.form-x-hoodie i,
+	.form-x-poster i,
+	.form-x-tanktop i,
+	.form-x-wristband i{
+		font-size: 60px;
+	}
+	/*COLOR SELECTIONS*/
+	.color-select{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		left: 15px;
+		top: 0;
+		margin: 0 auto;
+		position: absolute;
+		width: 15%;
+	}
+	#black,
+	#blackband,
+	#blue,
+	#greenband,
+	#mainband,
+	#purpleband,
+	#purple,
+	#redband,
+	#white
+	{
+		height: 60px;
+		margin: 10px 0;
+		width: 60px;
+	}
+	/*MAINSTREAM MEDIA*/
+	.mainstream h2{
+		font-size: 70px;
+		padding-top: 50px;
+	}
+	.mainstreamdancers{
+		top: 0;
+	}
+	.mainstreamdancers img{
+		height: 200px;
+	}
+	.mainstreamwrapper{
+		margin-top: 40px;
+	}
+	.mainstreambox .jarallax{
+		min-height: 800px;
+	}
+	.click-for-full-video{
+		bottom: 25px;
+	}
+	.click-for-full-video p{
+		font-size: 40px;
+	}
+	.mainstream-nav img{
+		max-width: 200px;
+	}
+	.mainstream-nav-arrows{
+		max-width: calc(100% - 10px);
+		top: 1130px;
+	}
+	#mainstream-nav-left-arrow,
+	#mainstream-nav-right-arrow{
+		height: 60px;
+	}
+	.mobile-circle{
+		border-bottom-left-radius: 150px;
+	    border-bottom-right-radius: 150px;
+	    height: 100px;
+	    width: 200px;
+	}
+	.mobile-hamburger span{
+		height: 5px;
+		width: 70px;
+	}
+	.burger1{
+		top: 20px;
+	}
+	.burger2{
+		top: 40px;
+	}
+	.burger3{
+		top: 60px;
+	}
+	/*BACKGROUND VIDEO*/
+	.jarallax{
+		min-height: 1500px;
+	}
+	/*PHOTOS*/
+	#photocolumn-1,
+	#photocolumn-4,
+	#photocolumn-5{
+		max-width: 0%;
+		width: 0%;
+	}
+	#photocolumn-2,
+	#photocolumn-3{
+		max-width: 50%;
+		width: 100%;
+	}
+	.photocollage img{
+		display: block;
+	    max-width: 100%;
+	    height: 500px;
+	    object-fit: cover;
+	    width: 100%;
+    }
+    .fancybox-active .fancybox-infobar{
+    	font-size: 50px;
+    	padding: 20px;
+    }
+    .fancybox-navigation .fancybox-button .fancybox-button--arrow_left{
+    	height: 100px;
+    	width: 100px;
+    }
+    /*WEDDINGS*/
+    .weddingcontainer{
+		flex-direction: column-reverse;
+	}
+	.wedding-cake{
+		max-width: 100%;
+		padding: 20px;
+	}
+	.wedding-cake img{
+		width: 750px;
+	}
+	.wedding-copy{
+		max-width: 100%;
+	}
+	#wedding-heading{
+		font-size: 200px;
+	}
+	#wedding-copy-body{
+		font-size: 50px;
+	}
+	/*BOOKING*/
+	.booking{
+		padding: 50px 0;
+	}
+	.booking h2{
+		font-size: 70px;
+		padding-top: 50px;
+	}
+	.booking p{
+		font-size: 40px;
+		padding-top: 60px;
+	}
+	.booking-dancers{
+		padding-top: 0;
+		top: 50px;
+	}
+	.booking-dancers img{
+		height: 200px;
+	}
+		/***ANCHOR TAGS***/
+	#upcoming-events{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#store{
+		bottom: 0;
+		position: absolute;
+	}
+	#mainstream-media{
+		bottom: 0;
+		position: absolute;
+	}
+	#wedding{
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+/***IPHONE LANDSCAPE***/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation: landscape){
+	/*ALL*/
+	.header{
+		display: none;
+	}
+	.mobile-menu{
+		display: block;
+	}
+	.upcomingshowsheader h2{
+		font-size: 70px;
+		padding: 30px 0;
+	}
+	/*HEADER*/
+	.mobile-circle{
+		border-bottom-left-radius: 150px;
+	    border-bottom-right-radius: 150px;
+	    height: 75px;
+	    width: 150px;
+	}
+	.mobile-hamburger span{
+		height: 4px;
+		width: 70px;
+	}
+	.burger1{
+		top: 17px;
+	}
+	.burger2{
+		top: 30px;
+	}
+	.burger3{
+		top: 44px;
+	}
+	.mobile-dropdown-container{
+		padding: 10px 0;
+	}
+	.mobile-dropdown-container img{
+		width: 500px;
+	}
+	.mobile-dropdown-container a{
+		font-size: 32px;
+	}
+	/*UPCOMING EVENTS*/
+	.upcomingshowsheader img{
+		height: 300px;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-event-buttons{
+		flex-direction: row;
+		margin: 30px 0 50px 0 !important;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-button{
+		width: 200px;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event{
+		justify-content: flex-start;
+		flex-direction: row;
+		text-align: left;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-details{
+		font-size: 30px;
+		line-height: 1.2;
+		margin: 0;
+	}
+	.upcoming .bit-widget .bit-upcoming-events-show-all-button, .bit-widget .bit-past-events-show-all-button{
+		font-size: 22px;
+		margin: 0 auto;
+		}
+	/*STORE*/
+	.storecontainer{
+		max-width: 100%;
+		padding-top: 50px;
+	}
+	.store-container-row-one-container, 
+	.store-container-row-two-container{
+		flex-direction: row;
+		max-width: 95%
+	}
+	.store-container-row-one-container{
+		padding-top: 40px;
+	}
+	.store h2{
+		font-size: 70px;
+    	padding-top: 50px;
+	}
+	.store-dancers{
+		top: 0;
+	}
+	.store-dancers img{
+		height: 200px;
+	}
+	.product{
+		max-width: 30%;
+	}
+	.product-image{
+		max-width: none;
+		min-width: 0;
+	}
+	.store-item-info{
+		font-size: 25px;
+		margin-top: -10px;
+		width: 100%;
+	}
+	.store-view-more p, 
+	.store-view-more i, 
+	.store-view-less p, 
+	.store-view-less i{
+		font-size: 20px;
+	}
+	/*COLOR SELECTION*/
+	.color-select{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		left: 15px;
+		top: 0;
+		margin: 0 auto;
+		position: absolute;
+		width: 15%;
+	}
+		#black,
+		#blackband,
+		#blue,
+		#greenband,
+		#mainband,
+		#purpleband,
+		#purple,
+		#redband,
+		#white
+	{
+		height: 25px;
+		margin: 5px 0;
+		width: 25px;
+	}
+	/*POPUPS*/
+	.product-popup{
+		margin-top: 0;
+		transform: translateY(5%);
+		z-index: 9999;
+	}
+	.product-popup-container{
+		flex-direction: row;
+		height: 450px;
+		justify-content: flex-start;
+	}
+	.product-popup-container-item, 
+	.product-popup-container-text{
+		width: 100%;
+	}
+	.product-popup-container-item{
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+	}
+	.product-popup-container-text{
+		height: 100%;
+	}
+	.product-popup-container img{
+		height: 350px;
+	}
+	.product-title-line-container{
+		flex-direction: column;
+		width: 100%;
+	}
+	.product-title-line p{
+		font-size: 35px;
+	}
+	#tbbn-product-title-logo p{
+		font-size: 60px;
+	}
+	#product-tanktop-popup .product-title-line p{
+		font-size: 24px;
+	}
+	.hoodie-sizes p{
+		padding-bottom: 50px;
+	}
+	#tbbn-product-title-logo{
+		height: 50px;
+	}
+	.hoodie-color-options,
+	.hoodie-size-options,
+	.tanktop-color-options,
+	.tanktop-size-options,
+	.tshirt-color-options,
+	.tshirt-size-options{
+		flex-direction: row;
+	}
+	.hoodie-colors,
+	.hoodie-sizes,
+	.tanktop-colors,
+	.tanktop-sizes,
+	.tshirt-colors,
+	.tshirt-sizes{
+		padding-bottom: 100px;
+	}
+	.option-boxes{
+		height: 100%;
+	}
+	.option-boxes,
+	.paypal-button-placement{
+		font-size: 24px;
+		max-width: 100%;
+	}
+	.tanktop-checkout{
+		margin: 30px 0;
+	}
+	.hoodie-color-options .option-middle,
+	.tanktop-color-options .option-middle,
+	.tshirt-color-options .option-middle{
+		margin: 0 0 0 5px;
+	}
+	.hoodie-size-options .option-middle,
+	.tanktop-size-options .option-middle,
+	.tshirt-size-options .option-middle{
+		margin: 0 5px;
+	}
+	.wristband-row-one,
+	.wristband-row-two{
+		width: 50%;
+	}
+	.wristband-row-one label,
+	.wristband-row-two label{
+		width: 100%;
+	}
+	#tanktop-colors-black-options,
+	#tshirt-colors-black-options{
+		margin: 0 2.5px 0 0;
+	}
+	#tanktop-colors-purple-options,
+	#tshirt-colors-purple-options{
+		margin: 0 0 0 2.5px;
+	}
+	#product-wristband-popup .option-boxes{
+		height: auto;
+	}
+	#tanktop-sizes-medium,
+	#tshirt-sizes-medium{
+		margin: 0 5px;
+	}
+	#tshirt-size-chart{
+		margin-top: -45px;
+	}
+	#product-wristband-popup .product-title-line p{
+		font-size: 24px;
+	}
+	#hoodie-size-chart span,
+	#tanktop-size-chart span,
+	#tshirt-size-chart span{
+		font-size: 18px;
+	}
+	.category-price p{
+		font-size: 28px;
+	}
+	.category-title p{
+		font-size: 28px;
+	}
+	.wristband-checkout{
+		margin-top: 190px;
+	}
+	.form-x-shirt, 
+	.form-x-coozie, 
+	.form-x-hoodie, 
+	.form-x-poster, 
+	.form-x-tanktop{
+		right: 10px;
+		top: -10px;
+	}
+	.form-x-shirt i,
+	.form-x-coozie i,
+	.form-x-hoodie i,
+	.form-x-poster i,
+	.form-x-tanktop i{
+		font-size: 30px;
+	}
+	/*MAINSTREAM MEDIA*/
+	.mainstream h2{
+		font-size: 70px;
+		padding-top: 50px;
+	}
+	.mainstreamdancers{
+		top: 0;
+	}
+	.mainstreamdancers img{
+		height: 200px;
+	}
+	.mainstreamwrapper{
+		margin-top: 40px;
+	}
+	.mainstreambox .jarallax{
+		min-height: 400px;
+	}
+	.click-for-full-video{
+		bottom: 25px;
+	}
+	.click-for-full-video p{
+		font-size: 25px;
+	}
+	.mainstream-nav img{
+		max-width: 150px;
+	}
+	.mainstream-nav-arrows{
+		max-width: calc(100% - 10px);
+		top: 720px;
+	}
+	#mainstream-nav-left-arrow,
+	#mainstream-nav-right-arrow{
+		height: 50px;
+	}
+	/*BACKGROUND VIDEO*/
+	.jarallax{
+		min-height: 700px;
+	}
+	/*PHOTOS*/
+	#photocolumn-1,
+	#photocolumn-5{
+		max-width: 0%;
+		width: 0%;
+	}
+	#photocolumn-2,
+	#photocolumn-3,
+	#photocolumn-4{
+		max-width: 33.2%;
+		width: 100%;
+	}
+	.photocollage img{
+		display: block;
+	    max-width: 100%;
+	    height: 300px;
+	    object-fit: cover;
+	    width: 100%;
+    }
+    .fancybox-active .fancybox-infobar{
+    	font-size: 50px;
+    	padding: 20px;
+    }
+    .fancybox-navigation .fancybox-button{
+    	height: 100px;
+    	width: 100px;
+    }
+    /*WEDDINGS*/
+    .weddingcontainer{
+		flex-direction: column-reverse;
+	}
+	.wedding-cake{
+		max-width: 100%;
+		padding: 20px;
+	}
+	.wedding-cake img{
+		width: 750px;
+	}
+	.wedding-copy{
+		max-width: 100%;
+	}
+	#wedding-heading{
+		font-size: 150px;
+	}
+	#wedding-copy-body{
+		font-size: 20px;
+	}
+	/*BOOKING*/
+	.booking{
+		padding: 50px 0;
+	}
+	.booking h2{
+		font-size: 70px;
+		padding-top: 50px;
+	}
+	.booking p{
+		font-size: 25px;
+		padding-top: 60px;
+	}
+	.booking-dancers{
+		padding-top: 0;
+		top: 50px;
+	}
+	.booking-dancers img{
+		height: 200px;
+	}
+	/***ANCHOR TAGS***/
+	#upcoming-events{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#store{
+		bottom: 0;
+		position: absolute;
+	}
+	#mainstream-media{
+		bottom: 0;
+		position: absolute;
+	}
+	#wedding{
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+/*IPAD PORTRAIT*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	/*ALL*/
+	.header{
+		display: none;
+	}
+	.mobile-menu{
+		display: block;
+	}
+	.upcomingshowsheader h2{
+		font-size: 70px;
+		padding: 30px 0;
+	}
+	/*HEADER*/
+	.mobile-dropdown-container img{
+		width: 700px;
+	}
+	.mobile-dropdown-container a{
+		font-size: 70px;
+		padding-bottom: 30px;
+	}
+	/*UPCOMING EVENTS*/
+	.upcomingshowsheader img{
+		height: 300px;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event{
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-event-buttons{
+		flex-direction: column;
+		margin: 30px 0 50px 0 !important;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-button{
+		padding: 20px 0;
+		width: 500px;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-details{
+		align-items: center;
+		font-size: 40px;
+		line-height: 1.2;
+		margin: 0;
+	}
+	.upcoming .bit-widget .bit-upcoming-events-show-all-button, 
+	.bit-widget .bit-past-events-show-all-button{
+		font-size: 40px;
+		margin: 0 auto;
+		padding: 20px 0;
+	    width: 500px;
+		}
+	/*STORE*/
+	.store{
+		margin-bottom: 40px;
+	}
+	.storecontainer{
+		max-width: 100%;
+		padding-top: 50px;
+	}
+	.store-container-row-one-container, 
+	.store-container-row-two-container{
+		flex-direction: column;
+	}
+	.store-container-row-one-container{
+		padding-top: 20px;
+	}
+	.store h2{
+		font-size: 60px;
+    	padding-top: 50px;
+	}
+	.store-dancers{
+		top: 0;
+	}
+	.store-dancers img{
+		height: 200px;
+	}
+	.product{
+		margin: 30px auto;
+		max-width: 80%;
+		width: 100%;
+	}
+	.product-image{
+		max-height: none;
+		max-width: none;
+		min-height: none;
+	}
+	.store-item-info{
+		font-size: 50px;
+		margin-top: -10px;
+		width: 100%;
+	}
+	.store-view-more p, 
+	.store-view-more i, 
+	.store-view-less p, 
+	.store-view-less i{
+		font-size: 40px;
+	}
+	/*POPUPS*/
+	.product-popup{
+		margin-top: 0;
+		transform: translateY(5%);
+		z-index: 9999;
+	}
+	.product-popup-container{
+		border-width: 5px;
+		flex-direction: column;
+		height: 1450px;
+		justify-content: flex-start;
+		padding-top: 0;
+	}
+	.product-popup-container-item, 
+	.product-popup-container-text{
+		width: 100%;
+	}
+	.product-popup-container-item{
+		display: block;
+		height: auto;
+	}
+	.product-popup-container-text{
+		height: 100%;
+		margin-top: 50px;
+	}
+	.product-popup-container img{
+		height: 700px;
+	}
+	.product-title-line-container{
+		flex-direction: row;
+		width: 100%;
+	}
+	.product-title-line p{
+		font-size: 60px;
+	}
+	#tbbn-product-title-logo p{
+		font-size: 60px;
+	}
+	#product-tanktop-popup .product-title-line p{
+		font-size: 55px;
+	}
+	.hoodie-sizes p{
+		padding-bottom: 50px;
+	}
+	#tbbn-product-title-logo{
+		height: 75px;
+	}
+	.hoodie-color-options,
+	.hoodie-size-options,
+	.tanktop-color-options,
+	.tanktop-size-options,
+	.tshirt-color-options,
+	.tshirt-size-options{
+		flex-direction: row;
+	}
+	.hoodie-colors,
+	.hoodie-sizes,
+	.tanktop-colors,
+	.tanktop-sizes,
+	.tshirt-colors,
+	.tshirt-sizes{
+		padding-bottom: 150px;
+	}
+	.option-boxes{
+		height: 75px;
+	}
+	.option-boxes,
+	.paypal-button-placement{
+		font-size: 50px;
+		max-width: 100%;
+	}
+	.hoodie-color-options .option-middle,
+	.tanktop-color-options .option-middle,
+	.tshirt-color-options .option-middle{
+		margin: 0 0 0 5px;
+	}
+	.hoodie-size-options .option-middle,
+	.tanktop-size-options .option-middle,
+	.tshirt-size-options .option-middle{
+		margin: 0 5px;
+	}
+	#tanktop-colors-black-options,
+	#tshirt-colors-black-options{
+		margin: 0 2.5px 0 0;
+	}
+	#tanktop-colors-purple-options,
+	#tshirt-colors-purple-options{
+		margin: 0 0 0 2.5px;
+	}
+	#tanktop-sizes-medium,
+	#tshirt-sizes-medium{
+		margin: 0 5px;
+	}
+	.wristband-row-one,
+	.wristband-row-two{
+		width: 50%;
+	}
+	#product-wristband-popup label{
+		width: 100%;
+	}
+	.wristband-checkout{
+		margin-top: 300px;
+	}
+	.wristband-checkout .paypal-button-placement{
+		max-width: calc(100% + 20px);
+    	width: 100%;
+	}
+	#hoodie-size-chart span,
+	#tanktop-size-chart span,
+	#tshirt-size-chart span{
+		font-size: 22px;
+	}
+	.category-price p{
+		font-size: 50px;
+	}
+	.category-title p{
+		font-size: 45px;
+	}
+	.form-x-shirt, 
+	.form-x-coozie, 
+	.form-x-hoodie, 
+	.form-x-poster, 
+	.form-x-tanktop,
+	.form-x-wristband{
+		top: -735px;
+	}
+	.form-x-shirt i,
+	.form-x-coozie i,
+	.form-x-hoodie i,
+	.form-x-poster i,
+	.form-x-tanktop i,
+	.form-x-wristband i{
+		font-size: 60px;
+	}
+	/*COLOR SELECTIONS*/
+	.color-select{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		left: 15px;
+		top: 0;
+		margin: 0 auto;
+		position: absolute;
+		width: 15%;
+	}
+	#black,
+	#blackband,
+	#blue,
+	#greenband,
+	#mainband,
+	#purpleband,
+	#purple,
+	#redband,
+	#white
+	{
+		height: 60px;
+		margin: 10px 0;
+		width: 60px;
+	}
+	/*MAINSTREAM MEDIA*/
+	.mainstream h2{
+		font-size: 70px;
+		padding-top: 50px;
+	}
+	.mainstreamdancers{
+		top: 0;
+	}
+	.mainstreamdancers img{
+		height: 200px;
+	}
+	.mainstreamwrapper{
+		margin-top: 40px;
+	}
+	.mainstreambox .jarallax{
+		min-height: 500px;
+	}
+	.click-for-full-video{
+		bottom: 25px;
+	}
+	.click-for-full-video p{
+		font-size: 24px;
+	}
+	.mainstream-nav img{
+		max-width: 200px;
+	}
+	.mainstream-nav-arrows{
+		max-width: calc(100% - 10px);
+		top: 1130px;
+	}
+	#mainstream-nav-left-arrow,
+	#mainstream-nav-right-arrow{
+		height: 60px;
+	}
+	.mobile-circle{
+		border-bottom-left-radius: 150px;
+	    border-bottom-right-radius: 150px;
+	    height: 100px;
+	    width: 200px;
+	}
+	.mobile-hamburger span{
+		height: 5px;
+		width: 70px;
+	}
+	.burger1{
+		top: 20px;
+	}
+	.burger2{
+		top: 40px;
+	}
+	.burger3{
+		top: 60px;
+	}
+	/*BACKGROUND VIDEO*/
+	.jarallax{
+		min-height: 1500px;
+	}
+	/*PHOTOS*/
+	#photocolumn-1,
+	#photocolumn-4,
+	#photocolumn-5{
+		max-width: 0%;
+		width: 0%;
+	}
+	#photocolumn-2,
+	#photocolumn-3{
+		max-width: 50%;
+		width: 100%;
+	}
+	.photocollage img{
+		display: block;
+	    max-width: 100%;
+	    height: 300px;
+	    object-fit: cover;
+	    width: 100%;
+    }
+    .fancybox-active .fancybox-infobar{
+    	font-size: 20px;
+    	padding: 0 10px 10px 10px;
+    }
+    .fancybox-navigation .fancybox-button .fancybox-button--arrow_left{
+    	height: 100px;
+    	width: 100px;
+    }
+    /*WEDDINGS*/
+    .weddingcontainer{
+		flex-direction: column-reverse;
+	}
+	.wedding-cake{
+		max-width: 100%;
+		padding: 20px;
+	}
+	.wedding-cake img{
+		width: 750px;
+	}
+	.wedding-copy{
+		max-width: 100%;
+	}
+	#wedding-heading{
+		font-size: 150px;
+	}
+	#wedding-copy-body{
+		font-size: 36px;
+	}
+	/*BOOKING*/
+	.booking{
+		padding: 50px 0;
+	}
+	.booking h2{
+		font-size: 70px;
+		padding-top: 50px;
+	}
+	.booking p{
+		font-size: 40px;
+		padding-top: 60px;
+	}
+	.booking-dancers{
+		padding-top: 0;
+		top: 50px;
+	}
+	.booking-dancers img{
+		height: 200px;
+	}
+		/***ANCHOR TAGS***/
+	#upcoming-events{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#store{
+		bottom: 0;
+		position: absolute;
+	}
+	#mainstream-media{
+		bottom: 0;
+		position: absolute;
+	}
+	#wedding{
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+/*IPAD LANDSCAPE*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	/*ALL*/
+	.header{
+		display: none;
+	}
+	.mobile-menu{
+		display: block;
+	}
+	.upcomingshowsheader h2{
+		font-size: 70px;
+		padding: 30px 0;
+	}
+	/*HEADER*/
+	.mobile-circle{
+		border-bottom-left-radius: 150px;
+	    border-bottom-right-radius: 150px;
+	    height: 75px;
+	    width: 150px;
+	}
+	.mobile-hamburger span{
+		height: 4px;
+		width: 70px;
+	}
+	.burger1{
+		top: 17px;
+	}
+	.burger2{
+		top: 30px;
+	}
+	.burger3{
+		top: 44px;
+	}
+	.mobile-dropdown-container{
+		padding: 10px 0;
+	}
+	.mobile-dropdown-container img{
+		padding-bottom: 30px;
+		width: 500px;
+	}
+	.mobile-dropdown-container a{
+		font-size: 30px;
+		padding-bottom: 15px;
+	}
+	/*UPCOMING EVENTS*/
+	.upcomingshowsheader img{
+		height: 200px;
+	}
+	.upcomingshowsheader h2{
+		font-size: 50px;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-event-buttons{
+		flex-direction: row;
+		margin: 30px 0 50px 0 !important;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-button{
+		width: 200px;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event{
+		justify-content: flex-start;
+		flex-direction: row;
+		text-align: left;
+	}
+	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-details{
+		font-size: 24px;
+		line-height: 1.2;
+		margin: 0;
+	}
+	.upcoming .bit-widget .bit-upcoming-events-show-all-button, .bit-widget .bit-past-events-show-all-button{
+		font-size: 22px;
+		margin: 0 auto;
+		}
+	/*STORE*/
+	.store{
+		margin-bottom: 40px;
+	}
+	.storecontainer{
+		max-width: 100%;
+		padding-top: 50px;
+	}
+	.store-container-row-one-container, 
+	.store-container-row-two-container{
+		flex-direction: row;
+		max-width: 95%
+	}
+	.store-container-row-one-container{
+		padding-top: 40px;
+	}
+	.store h2{
+		font-size: 50px;
+    	padding-top: 50px;
+	}
+	.store-dancers{
+		top: 0;
+	}
+	.store-dancers img{
+		height: 200px;
+	}
+	.product{
+		max-width: 30%;
+	}
+	.product-image{
+		max-width: none;
+		min-width: 0;
+	}
+	.store-item-info{
+		font-size: 25px;
+		margin-top: -10px;
+		width: 100%;
+	}
+	.store-view-more p, 
+	.store-view-more i, 
+	.store-view-less p, 
+	.store-view-less i{
+		font-size: 20px;
+	}
+	/*COLOR SELECTION*/
+	.color-select{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		left: 15px;
+		top: 0;
+		margin: 0 auto;
+		position: absolute;
+		width: 15%;
+	}
+		#black,
+		#blackband,
+		#blue,
+		#greenband,
+		#mainband,
+		#purpleband,
+		#purple,
+		#redband,
+		#white
+	{
+		height: 25px;
+		margin: 5px 0;
+		width: 25px;
+	}
+	/*POPUPS*/
+	.product-popup{
+		margin-top: 0;
+		transform: translateY(5%);
+		z-index: 9999;
+	}
+	.product-popup-container{
+		flex-direction: row;
+		height: 450px;
+		justify-content: flex-start;
+	}
+	.product-popup-container-item, 
+	.product-popup-container-text{
+		width: 100%;
+	}
+	.product-popup-container-item{
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+	}
+	.product-popup-container-text{
+		height: 100%;
+	}
+	.product-popup-container img{
+		height: 350px;
+	}
+	.product-title-line-container{
+		flex-direction: column;
+		width: 100%;
+	}
+	.product-title-line p{
+		font-size: 35px;
+	}
+	#tbbn-product-title-logo p{
+		font-size: 60px;
+	}
+	#product-tanktop-popup .product-title-line p{
+		font-size: 24px;
+	}
+	.hoodie-sizes p{
+		padding-bottom: 50px;
+	}
+	#tbbn-product-title-logo{
+		height: 50px;
+	}
+	.hoodie-color-options,
+	.hoodie-size-options,
+	.tanktop-color-options,
+	.tanktop-size-options,
+	.tshirt-color-options,
+	.tshirt-size-options{
+		flex-direction: row;
+	}
+	.hoodie-colors,
+	.hoodie-sizes,
+	.tanktop-colors,
+	.tanktop-sizes,
+	.tshirt-colors,
+	.tshirt-sizes{
+		padding-bottom: 100px;
+	}
+	.option-boxes{
+		height: 100%;
+	}
+	.option-boxes,
+	.paypal-button-placement{
+		font-size: 24px;
+		max-width: 100%;
+	}
+	.tanktop-checkout{
+		margin: 30px 0;
+	}
+	.hoodie-color-options .option-middle,
+	.tanktop-color-options .option-middle,
+	.tshirt-color-options .option-middle{
+		margin: 0 0 0 5px;
+	}
+	.hoodie-size-options .option-middle,
+	.tanktop-size-options .option-middle,
+	.tshirt-size-options .option-middle{
+		margin: 0 5px;
+	}
+	.wristband-row-one,
+	.wristband-row-two{
+		width: 50%;
+	}
+	.wristband-row-one label,
+	.wristband-row-two label{
+		width: 100%;
+	}
+	#tanktop-colors-black-options,
+	#tshirt-colors-black-options{
+		margin: 0 2.5px 0 0;
+	}
+	#tanktop-colors-purple-options,
+	#tshirt-colors-purple-options{
+		margin: 0 0 0 2.5px;
+	}
+	#product-wristband-popup .option-boxes{
+		height: auto;
+	}
+	#tanktop-sizes-medium,
+	#tshirt-sizes-medium{
+		margin: 0 5px;
+	}
+	#tshirt-size-chart{
+		margin-top: -45px;
+	}
+	#product-wristband-popup .product-title-line p{
+		font-size: 24px;
+	}
+	#hoodie-size-chart span,
+	#tanktop-size-chart span,
+	#tshirt-size-chart span{
+		font-size: 18px;
+	}
+	.category-price p{
+		font-size: 28px;
+	}
+	.category-title p{
+		font-size: 28px;
+	}
+	.wristband-checkout{
+		margin-top: 190px;
+	}
+	.form-x-shirt, 
+	.form-x-coozie, 
+	.form-x-hoodie, 
+	.form-x-poster, 
+	.form-x-tanktop{
+		right: 10px;
+		top: -10px;
+	}
+	.form-x-shirt i,
+	.form-x-coozie i,
+	.form-x-hoodie i,
+	.form-x-poster i,
+	.form-x-tanktop i{
+		font-size: 30px;
+	}
+	/*MAINSTREAM MEDIA*/
+	.mainstream h2{
+		font-size: 50px;
+		padding-top: 50px;
+	}
+	.mainstreamdancers{
+		top: 20px;
+	}
+	.mainstreamdancers img{
+		height: 150px;
+	}
+	.mainstreamwrapper{
+		margin-top: 24px;
+	}
+	.mainstreambox .jarallax{
+		min-height: 400px;
+	}
+	.click-for-full-video{
+		bottom: 25px;
+	}
+	.click-for-full-video p{
+		font-size: 25px;
+	}
+	.mainstream-nav img{
+		max-width: 150px;
+	}
+	.mainstream-nav-arrows{
+		max-width: calc(100% - 10px);
+		top: 720px;
+	}
+	#mainstream-nav-left-arrow,
+	#mainstream-nav-right-arrow{
+		height: 50px;
+	}
+	/*BACKGROUND VIDEO*/
+	.jarallax{
+		min-height: 700px;
+	}
+	/*PHOTOS*/
+	#photocolumn-1,
+	#photocolumn-5{
+		max-width: 0%;
+		width: 0%;
+	}
+	#photocolumn-2,
+	#photocolumn-3,
+	#photocolumn-4{
+		max-width: 33.2%;
+		width: 100%;
+	}
+	.photocollage img{
+		display: block;
+	    max-width: 100%;
+	    height: 200px;
+	    object-fit: cover;
+	    width: 100%;
+    }
+    .fancybox-active .fancybox-infobar{
+    	font-size: 20px;
+    	padding: 0 10px 10px 10px;
+    }
+    .fancybox-navigation .fancybox-button{
+    	height: 100px;
+    	width: 100px;
+    }
+    /*WEDDINGS*/
+    .weddingcontainer{
+		flex-direction: column-reverse;
+	}
+	.wedding-cake{
+		max-width: 100%;
+		padding: 20px;
+	}
+	.wedding-cake img{
+		width: 500px;
+	}
+	.wedding-copy{
+		max-width: 100%;
+	}
+	#wedding-heading{
+		font-size: 120px;
+	}
+	#wedding-copy-body{
+		font-size: 20px;
+	}
+	/*BOOKING*/
+	.booking{
+		padding: 50px 0;
+	}
+	.booking h2{
+		font-size: 50px;
+		padding-top: 50px;
+	}
+	.booking p{
+		font-size: 25px;
+		padding-top: 60px;
+	}
+	.booking-dancers{
+		padding-top: 20px;
+		top: 50px;
+	}
+	.booking-dancers img{
+		height: 150px;
+	}
+	/***ANCHOR TAGS***/
+	#upcoming-events{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#store{
+		bottom: 0;
+		position: absolute;
+	}
+	#mainstream-media{
+		bottom: 0;
+		position: absolute;
+	}
+	#wedding{
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
