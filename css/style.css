@@ -439,12 +439,14 @@
 	.booking-container p{
 		color: #fff;
 		font-family: 'Montserrat';
+		font-size: 24px;
 		padding-top: 20px;
 	}
 	.booking-container a{
 		color: #fff;
 	}
 	.booking-dancers{
+		max-width: 90%;
 		padding-top: 20px;
 		position: absolute;
 		text-align: center;
@@ -455,6 +457,27 @@
 	.booking-dancers img{
 		height: 100px;
 		width: auto;
+	}
+	#booking-details{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		margin: 0 auto;
+		max-width: 80%;
+		padding-top: 20px;
+	}
+	.booking-bullet-container{
+		padding-top: 20px;
+	}
+	.booking-bullet{
+		align-items: flex-end;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		padding-bottom: 5px;
+		width: 100%;
+	}
+	.booking-bullet p{
+		padding: 0 10px;
 	}
 /***ANCHOR TAGS***/
 	#upcoming-events{
@@ -473,6 +496,10 @@
 		margin-top: -45px;
 		padding-top: 45px;
 	}
+	#booking{
+		margin-top: -45px;
+		padding-top: 45px;
+	}
 /***STORE***/
 	.store{
 		position: relative;
@@ -480,7 +507,7 @@
 		background-position: center;
 		background-repeat: repeat;
 		background-size: 150px;
-		margin: 0 auto;
+		margin: 0 auto 40px 0;
 		max-width: 1500px;
 	}
 	.storecontainer{
@@ -1101,7 +1128,7 @@
 		height: 300px;
 		width: auto;
 	}
-}
+	}
 @media(max-width:1110px){
 	.storecontainer{
 		max-width: 900px;
@@ -1300,17 +1327,17 @@
 	.tshirt-checkout label{
 		font-size: 16px;
 	}
-}
+	}
 @media(max-width:825px){
 	.mainstreamcontainer{
 		max-width: 700px;
 	}
-}
+	}
 @media(max-width:815px){
 	#product-wristband-popup .product-title-line p{
 		font-size: 18px;
 	}
-}
+	}
 @media(max-width:800px){
 	.header{
 		display: none;
@@ -1330,7 +1357,7 @@
 	.storecontainer{
 		max-width: 600px;
 	}
-}
+	}
 @media(max-width:750px){
 	.photocolumnblock #photocolumn-4,
 	.photocolumnblock #photocolumn-5{
@@ -1342,7 +1369,7 @@
 	#photocolumn-3{
 		max-width: 33.4%;
 	}
-}
+	}
 @media(max-width:725px){
 	.mainstreamcontainer{
 		max-width: 600px;
@@ -1397,12 +1424,12 @@
 	    
     	top: -275px;
 	}
-}
+	}
 @media(max-width:710px){
 	.storecontainer h2{
 		font-size: 30px;
 	}
-}
+	}
 @media(max-width:700px){
 	.upcoming .bit-widget.bit-layout-ipad .bit-event .bit-event-buttons{
 		flex-direction: column-reverse;
@@ -1443,12 +1470,12 @@
 	.product-title-line-container{
 		flex-direction: column;
 	}
-}
+	}
 @media(max-width:650px){
 	.option-boxes{
 		max-width: 100%;
 	}
-}
+	}
 @media(max-width:625px){
 	.mainstreamcontainer{
 		max-width: 500px;
@@ -1456,7 +1483,7 @@
 	.mainstream-nav img{
 		max-width: 110px;
 	}
-}
+	}
 @media(max-width:600px){
 	.product-title-line p{
 		font-size: 32px;
@@ -1471,12 +1498,12 @@
 	#photocolumn-2{
 		max-width: 50%;
 	}
-}
+	}
 @media(max-width:590px){
 	.storecontainer{
 		max-width: 400px;
 	}
-}
+	}
 @media(max-width:575px){
 	.upcomingshowsheader img{
 		height: 150px;
@@ -1493,19 +1520,19 @@
 	.mainstream-nav-arrows{
 		top: 576px;
 	}
-}
+	}
 @media(max-width:550px){
 	.mobile-dropdown-container img{
 		width: 400px;
 	}
 	#product-tanktop-popup .product-title-line p{
 	}
-}
+	}
 @media(max-width:525px){
 	.mainstreamcontainer{
 		max-width: 450px;
 	}
-}
+	}
 }
 /*IPHONE PORTRAIT*/
 @media only screen and (min-device-width : 375px) and (max-device-width : 736px) and (orientation: portrait){
@@ -1525,7 +1552,7 @@
 		width: 900px;
 	}
 	.mobile-dropdown-container a{
-		font-size: 70px;
+		font-size: 50px;
 	}
 	/*UPCOMING EVENTS*/
 	.upcomingshowsheader img{
@@ -1837,7 +1864,8 @@
 	    object-fit: cover;
 	    width: 100%;
     }
-    .fancybox-active .fancybox-infobar{
+    .fancybox-active .fancybox-infobar,
+    .fancybox-active .fancybox-toolbar{
     	font-size: 50px;
     	padding: 20px;
     }
@@ -1871,10 +1899,10 @@
 	}
 	.booking h2{
 		font-size: 70px;
-		padding-top: 50px;
+		padding: 50px 0;
 	}
 	.booking p{
-		font-size: 40px;
+		font-size: 60px;
 		padding-top: 60px;
 	}
 	.booking-dancers{
@@ -1883,6 +1911,18 @@
 	}
 	.booking-dancers img{
 		height: 200px;
+	}
+	#booking-details{
+		font-size: 70px;
+		line-height: 1.5;
+		padding-top: 50px;
+		max-width: 100%;
+	}
+	.booking-bullet-container{
+		padding-top: 50px;
+	}
+	.booking-bullet p{
+		padding: 0 0 10px 0;
 	}
 		/***ANCHOR TAGS***/
 	#upcoming-events{
@@ -1900,6 +1940,11 @@
 	#wedding{
 		margin-top: 0;
 		padding-top: 0;
+	}
+	#booking{
+		margin-top: -45px;
+		padding-top: 45px;
+		position: absolute;
 	}
 }
 /***IPHONE LANDSCAPE***/
@@ -2271,7 +2316,7 @@
 		padding-top: 50px;
 	}
 	.booking p{
-		font-size: 25px;
+		font-size: 50px;
 		padding-top: 60px;
 	}
 	.booking-dancers{
@@ -2280,6 +2325,18 @@
 	}
 	.booking-dancers img{
 		height: 200px;
+	}
+	#booking-details{
+		font-size: 38px;
+		line-height: 1.5;
+		max-width: 100%;
+		padding-top: 50px;
+	}
+	.booking-bullet-container{
+		padding-top: 50px;
+	}
+	.booking-bullet p{
+		padding: 0 0 5px 0;
 	}
 	/***ANCHOR TAGS***/
 	#upcoming-events{
@@ -2679,6 +2736,9 @@
 	}
 	.booking-dancers img{
 		height: 200px;
+	}
+	.booking-bullet p{
+		padding: 0 0 10px 0;
 	}
 		/***ANCHOR TAGS***/
 	#upcoming-events{
@@ -3084,6 +3144,9 @@
 	}
 	.booking-dancers img{
 		height: 150px;
+	}
+	.booking-bullet p{
+		padding: 0 0 10px 0;
 	}
 	/***ANCHOR TAGS***/
 	#upcoming-events{
